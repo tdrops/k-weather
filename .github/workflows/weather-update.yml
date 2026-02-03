@@ -17,7 +17,7 @@ jobs:
           # 안전한 호출: 실패 시 작업 실패로 처리하고, 재시도 옵션 추가
           curl -sS --fail --show-error \
             --retry 3 --retry-delay 10 \
-            "https://www.k-weather.co.kr/cron_trigger.php?key=${WEATHER_KEY}" \
+            "https://www.k-weather.co.kr/app/cron_trigger.php?key=${WEATHER_KEY}" \
             -H "User-Agent: GitHub-Actions" -o response.txt || (echo "Request failed with exit $?" && exit 1)
 
           echo "HTTP response body (first 200 chars):"
