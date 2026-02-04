@@ -3,7 +3,7 @@ name: Weather Data Update
 # 주기 실행(스케줄) 및 수동 실행 가능
 on:
   schedule:
-    - cron: '10 2,5,8,11,14,17,20,23 * * *'  # 주의: GitHub Actions는 UTC 기준입니다
+    - cron: '11 2,5,8,11,14,17,20,23 * * *'  # 주의: GitHub Actions는 UTC 기준입니다
   workflow_dispatch:
 
 jobs:
